@@ -1,0 +1,3 @@
+[submodule "abacus-scripts"]
+	path = abacus-scripts
+	url = https://github.com/kifeh-polyswarm/abacus-scripts.git

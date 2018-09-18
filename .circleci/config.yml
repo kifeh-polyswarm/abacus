@@ -32,4 +32,4 @@ workflows:
             branches:
               only:
                 - master
-                - ch-circleci-ci
+                - ch-circle-ci

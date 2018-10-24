@@ -13,10 +13,11 @@ class Util(object):
             perimeter = reduce(lambda x, y: (2 * x) + (2 * y), args)
         elif shape == "circle":
             perimeter = 2 * math.pi * args[0]
+        elif shape == "triangle":
+            perimeter = reduce(lambda x, y: x+y, args)
         else:
             print "The shape, %s, is not supported" % (shape)
         return perimeter
-        
 
     @classmethod
     def area(cls, shape, *args):

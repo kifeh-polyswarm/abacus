@@ -11,8 +11,10 @@ class Util(object):
         pass
 
     @classmethod
-    def volume(arg1, arg2, arg3):
-        pass
+    def volume(cls, *args):
+        volume = 0
+        volume = reduce(lambda x, y: x*y, args)
+        return volume
 
     @classmethod
     def speed(arg1, arg2):

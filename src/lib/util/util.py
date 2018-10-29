@@ -47,5 +47,7 @@ class Util(object):
         return "%s %s" %(distance, unit)
 
     @classmethod
-    def time(arg1, arg2):
-        pass
+    def time(cls, unit, *args):
+        time = 0
+        time = reduce(lambda x, y: x/y, args)
+        return time
